@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossa Jornada</title>
+
+  <!-- Fonte do Google (Poppins) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Container dos corações animados -->
+  <div class="hearts-container"></div>
+
+  <!-- Cartão central -->
+  <div class="centered-content">
+    <h1>nossa jornada!</h1>
+    
+    <!-- Imagem do casal -->
+    <img src="img_casal3.jpg" alt="Imagem do Casal" class="img_casal">
+
+    <!-- Botões principais -->
+    <div class="buttons">
+      <button id="btn-tempo">tempo juntos</button>
+      <button>memórias</button>
+      <button>futuro</button>
+    </div>
+  </div>
+
+  <!-- MODAL - Tempo Juntos -->
+  <div id="modal-tempo" class="modal">
+    <div class="modal-content">
+      <!-- Botão para fechar o modal -->
+      <button class="close-button" id="close-tempo">X</button>
+      
+      <!-- Container de carregamento: exibido inicialmente -->
+      <div id="loading-container">
+        <p id="loading-text">carregando...</p>
+      </div>
+      
+      <!-- Container com o conteúdo carregado: oculto inicialmente -->
+      <div id="loaded-content" style="display: none;">
+        <!-- Título -->
+        <h2 class="modal-title">Tempo Juntos</h2>
+        <!-- Imagem -->
+        <img src="img_casal2.jpg" alt="Imagem do Casal 2" class="img_casal2">
+        <!-- Contador (anos, meses, dias e hms) -->
+        <div class="time-container">
+          <p class="time-summary">
+            <span id="anos">0</span> anos | 
+            <span id="meses">0</span> meses | 
+            <span id="dias">0</span> dias
+          </p>
+          <p class="time-hms">
+            horas/minutos/segundos: <span id="hms">00:00:00</span>
+          </p>
+        </div>
+      </div>
+      
+      <!-- Flores (sempre visíveis no fundo do modal) -->
+      <div class="flowers">
+        <span class="rose">🌹</span>
+        <span class="rose">🌹</span>
+        <span class="rose">🌹</span>
+        <span class="rose">🌹</span>
+        <span class="rose">🌹</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
